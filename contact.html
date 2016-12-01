@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Whisker's Bakery</title>
+<link href="https://fonts.googleapis.com/css?family=Pacifico%7COswald" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+<div id="container">
+<h1 class="hidden">Contact</h1>
+<nav id="mainNav">
+<h1 class="hidden">Main Navigation</h1>
+	<ul>
+    	<li ><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="top">
+    <h1 class="hidden">Logo</h1>
+        <div id="bigImage">
+        </div>
+        <div class="logo">
+        	<img src="images/whiskers_logo.png" alt="Whisker's Logo" width="780" height="485">
+        </div>
+</section>
+
+<section id="conForm">
+    <h1 class="hidden">Contact Form</h1>
+        <div id="conFormWords">
+        	<p><span class="blue"> We <br> would </span> <br> <span id="red">love</span> <br> <span class="blue"> to hear <br> from </span> <br><span id="yellow"> you</span> </p>
+        </div>
+        <div id="conFormForm">
+        	   <form id="contactForm" action="form.php" method="post">
+                <fieldset>
+                 
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Name">
+                    
+                    <input type="email" required id="email" size="30" placeholder="Email">
+                    
+                    <input type="tel" required id="phone" size="30" placeholder="Phone Number">
+                    
+                    <select name="Product" placeholder="Product"> 
+                      <option value="cake">Cake</option>
+                      <option value="cupcakes">Cupcakes</option>
+                      <option value="cookies">Cookies</option>
+                      <option value="pie">Pie</option>
+                    </select>
+                    
+                    <textarea name="comments" id="comments" placeholder="Inquiry" required cols="50" rows="8"></textarea>
+                      
+                    <input id="submit" type="submit" value="Submit">
+                    
+                </fieldset>
+            </form>
+        </div>
+</section>
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
